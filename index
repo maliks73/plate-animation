@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <title>Tiles Animation</title>
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="tiles-container">
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+      </div>
+   </body>
+</html>
