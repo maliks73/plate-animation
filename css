@@ -1,0 +1,521 @@
+body {
+    background: #000;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-flex-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-flex-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+}
+.tiles-container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    -webkit-animation: tiles-containerRotate 80000ms linear infinite;
+    -moz-animation: tiles-containerRotate 80000ms linear infinite;
+    animation: tiles-containerRotate 80000ms linear infinite;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.tiles-container .tiles {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-box-shadow: 10px 0 100px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 10px 0 100px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 10px 0 100px rgba(0, 0, 0, 0.1) inset;
+}
+.tiles-container .tiles::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateZ(-2px);
+    -moz-transform: translateZ(-2px);
+    transform: translateZ(-2px);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.tiles-container .tiles:nth-child(1) {
+    -webkit-animation: animate-titles 10000ms 0ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 0ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 0ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+}
+
+.tiles-container .tiles:nth-child(1)::after {
+    background: #FFC0CB;
+}
+
+.tiles-container .tiles:nth-child(2) {
+    -webkit-animation: animate-titles 10000ms 100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -11%;
+    -moz-transform-origin: 0% -11%;
+    transform-origin: 0% -11%;
+}
+
+.tiles-container .tiles:nth-child(2)::after {
+    background: #FF69B4;
+}
+
+.tiles-container .tiles:nth-child(3) {
+    -webkit-animation: animate-titles 10000ms 200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -22%;
+    -moz-transform-origin: 0% -22%;
+    transform-origin: 0% -22%;
+}
+
+.tiles-container .tiles:nth-child(3)::after {
+    background: #C71585;
+}
+.tiles-container .tiles:nth-child(4) {
+    -webkit-animation: animate-titles 10000ms 300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -33%;
+    -moz-transform-origin: 0% -33%;
+    transform-origin: 0% -33%;
+}
+.tiles-container .tiles:nth-child(4)::after {
+    background: #800080;
+}
+.tiles-container .tiles:nth-child(5) {
+    -webkit-animation: animate-titles 10000ms 400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -44%;
+    -moz-transform-origin: 0% -44%;
+    transform-origin: 0% -44%;
+}
+.tiles-container .tiles:nth-child(5)::after {
+    background: #c483f6;
+}
+.tiles-container .tiles:nth-child(6) {
+    -webkit-animation: animate-titles 10000ms 500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -55%;
+    -moz-transform-origin: 0% -55%;
+    transform-origin: 0% -55%;
+}
+
+.tiles-container .tiles:nth-child(6)::after {
+    background: #cfa48a;
+}
+
+.tiles-container .tiles:nth-child(7) {
+    -webkit-animation: animate-titles 10000ms 600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -66%;
+    -moz-transform-origin: 0% -66%;
+    transform-origin: 0% -66%;
+}
+.tiles-container .tiles:nth-child(7)::after {
+    background: #c4b294;
+}
+.tiles-container .tiles:nth-child(8) {
+    -webkit-animation: animate-titles 10000ms 700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -77%;
+    -moz-transform-origin: 0% -77%;
+    transform-origin: 0% -77%;
+}
+.tiles-container .tiles:nth-child(8)::after {
+    background: #7da3e0;
+}
+.tiles-container .tiles:nth-child(9) {
+    -webkit-animation: animate-titles 10000ms 800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -88%;
+    -moz-transform-origin: 0% -88%;
+    transform-origin: 0% -88%;
+}
+.tiles-container .tiles:nth-child(9)::after {
+    background: #ffb977;
+}
+.tiles-container .tiles:nth-child(10) {
+    -webkit-animation: animate-titles 10000ms 900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -99%;
+    -moz-transform-origin: 0% -99%;
+    transform-origin: 0% -99%;
+}
+
+.tiles-container .tiles:nth-child(10)::after {
+    background: #dcc084;
+}
+
+.tiles-container .tiles:nth-child(11) {
+    -webkit-animation: animate-titles 10000ms 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -110%;
+    -moz-transform-origin: 0% -110%;
+    transform-origin: 0% -110%;
+}
+
+.tiles-container .tiles:nth-child(11)::after {
+    background: #f18ad0;
+}
+
+.tiles-container .tiles:nth-child(12) {
+    -webkit-animation: animate-titles 10000ms 1100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 1100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 1100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -121%;
+    -moz-transform-origin: 0% -121%;
+    transform-origin: 0% -121%;
+}
+
+.tiles-container .tiles:nth-child(12)::after {
+    background: #ff95c7;
+}
+
+.tiles-container .tiles:nth-child(13) {
+    -webkit-animation: animate-titles 10000ms 1200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 1200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 1200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -132%;
+    -moz-transform-origin: 0% -132%;
+    transform-origin: 0% -132%;
+}
+
+.tiles-container .tiles:nth-child(13)::after {
+    background: #deddf1;
+}
+
+.tiles-container .tiles:nth-child(14) {
+    -webkit-animation: animate-titles 10000ms 1300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 1300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 1300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -143%;
+    -moz-transform-origin: 0% -143%;
+    transform-origin: 0% -143%;
+}
+
+.tiles-container .tiles:nth-child(14)::after {
+    background: #dca783;
+}
+
+.tiles-container .tiles:nth-child(15) {
+    -webkit-animation: animate-titles 10000ms 1400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 1400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 1400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -154%;
+    -moz-transform-origin: 0% -154%;
+    transform-origin: 0% -154%;
+}
+
+.tiles-container .tiles:nth-child(15)::after {
+    background: #e06b95;
+}
+
+.tiles-container .tiles:nth-child(16) {
+    -webkit-animation: animate-titles 10000ms 1500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 1500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 1500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -165%;
+    -moz-transform-origin: 0% -165%;
+    transform-origin: 0% -165%;
+}
+
+.tiles-container .tiles:nth-child(16)::after {
+    background: #85a8ab;
+}
+
+.tiles-container .tiles:nth-child(17) {
+    -webkit-animation: animate-titles 10000ms 1600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 1600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 1600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -176%;
+    -moz-transform-origin: 0% -176%;
+    transform-origin: 0% -176%;
+}
+
+.tiles-container .tiles:nth-child(17)::after {
+    background: #c9bfa0;
+}
+
+.tiles-container .tiles:nth-child(18) {
+    -webkit-animation: animate-titles 10000ms 1700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 1700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 1700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -187%;
+    -webkit-transform-origin: 0% -187%;
+    transform-origin: 0% -187%;
+}
+
+.tiles-container .tiles:nth-child(18)::after {
+    background: #c392a8;
+}
+
+.tiles-container .tiles:nth-child(19) {
+    -webkit-animation: animate-titles 10000ms 1800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 1800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 1800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -198%;
+    -moz-transform-origin: 0% -198%;
+    transform-origin: 0% -198%;
+}
+
+.tiles-container .tiles:nth-child(19)::after {
+    background: #96d6a6;
+}
+
+.tiles-container .tiles:nth-child(20) {
+    -webkit-animation: animate-titles 10000ms 1900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 1900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 1900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -209%;
+    -moz-transform-origin: 0% -209%;
+    transform-origin: 0% -209%;
+}
+
+.tiles-container .tiles:nth-child(20)::after {
+    background: #b566c8;
+}
+
+.tiles-container .tiles:nth-child(21) {
+    -webkit-animation: animate-titles 10000ms 2000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 2000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 2000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -220%;
+    -moz-transform-origin: 0% -220%;
+    transform-origin: 0% -220%;
+}
+
+.tiles-container .tiles:nth-child(21)::after {
+    background: #f7fb8e;
+}
+
+.tiles-container .tiles:nth-child(22) {
+    -webkit-animation: animate-titles 10000ms 2100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 2100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 2100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -231%;
+    -moz-transform-origin: 0% -231%;
+    transform-origin: 0% -231%;
+}
+
+.tiles-container .tiles:nth-child(22)::after {
+    background: #9d95ad;
+}
+
+.tiles-container .tiles:nth-child(23) {
+    -webkit-animation: animate-titles 10000ms 2200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 2200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 2200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -242%;
+    -moz-transform-origin: 0% -242%;
+    transform-origin: 0% -242%;
+}
+
+.tiles-container .tiles:nth-child(23)::after {
+    background: #8669e6;
+}
+
+.tiles-container .tiles:nth-child(24) {
+    -webkit-animation: animate-titles 10000ms 2300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 2300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 2300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -253%;
+    -moz-transform-origin: 0% -253%;
+    transform-origin: 0% -253%;
+}
+
+.tiles-container .tiles:nth-child(24)::after {
+    background: #88bbc2;
+}
+
+.tiles-container .tiles:nth-child(25) {
+    -webkit-animation: animate-titles 10000ms 2400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 2400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 2400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -264%;
+    -moz-transform-origin: 0% -264%;
+    transform-origin: 0% -264%;
+}
+
+.tiles-container .tiles:nth-child(25)::after {
+    background: #8cbfec;
+}
+
+.tiles-container .tiles:nth-child(26) {
+    -webkit-animation: animate-titles 10000ms 2500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 2500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 2500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -275%;
+    -moz-transform-origin: 0% -275%;
+    transform-origin: 0% -275%;
+}
+
+.tiles-container .tiles:nth-child(26)::after {
+    background: #a1f9f4;
+}
+
+.tiles-container .tiles:nth-child(27) {
+    -webkit-animation: animate-titles 10000ms 2600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 2600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 2600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -286%;
+    -moz-transform-origin: 0% -286%;
+    transform-origin: 0% -286%;
+}
+
+.tiles-container .tiles:nth-child(27)::after {
+    background: #caf5c0;
+}
+
+.tiles-container .tiles:nth-child(28) {
+    -webkit-animation: animate-titles 10000ms 2700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 2700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 2700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -297%;
+    -moz-transform-origin: 0% -297%;
+    transform-origin: 0% -297%;
+}
+
+.tiles-container .tiles:nth-child(28)::after {
+    background: #69ec8e;
+}
+
+.tiles-container .tiles:nth-child(29) {
+    -webkit-animation: animate-titles 10000ms 2800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 2800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 2800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -308%;
+    -moz-transform-origin: 0% -308%;
+    transform-origin: 0% -308%;
+}
+
+.tiles-container .tiles:nth-child(29)::after {
+    background: #b5ffa9;
+}
+
+.tiles-container .tiles:nth-child(30) {
+    -webkit-animation: animate-titles 10000ms 2900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -moz-animation: animate-titles 10000ms 2900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    animation: animate-titles 10000ms 2900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    -webkit-transform-origin: 0% -319%;
+    -moz-transform-origin: 0% -319%;
+    transform-origin: 0% -319%;
+}
+
+.tiles-container .tiles:nth-child(30)::after {
+    background: #affbb4;
+}
+
+@-webkit-keyframes tiles-containerRotate {
+    0% {
+        -webkit-transform: rotateX(70deg) rotateZ(0deg);
+        transform: rotateX(70deg) rotateZ(0deg);
+    }
+    100% {
+        -webkit-transform: rotateX(70deg) rotateZ(360deg);
+        transform: rotateX(70deg) rotateZ(360deg);
+    }
+}
+@-moz-keyframes tiles-containerRotate {
+    0% {
+        -moz-transform: rotateX(70deg) rotateZ(0deg);
+        transform: rotateX(70deg) rotateZ(0deg);
+    }
+    100% {
+        -moz-transform: rotateX(70deg) rotateZ(360deg);
+        transform: rotateX(70deg) rotateZ(360deg);
+    }
+}
+@keyframes tiles-containerRotate {
+    0% {
+        transform: rotateX(70deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(70deg) rotateZ(360deg);
+    }
+}
+
+@-webkit-keyframes animate-titles {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: rotateX(-360deg) rotateY(180deg);
+        transform: rotateX(-360deg) rotateY(180deg);
+    }
+    65% {
+        -webkit-transform: rotateX(-360deg) rotateY(360deg);
+        transform: rotateX(-360deg) rotateY(360deg);
+    }
+    100% {
+        -webkit-transform: rotateX(-360deg) rotateY(360deg);
+        transform: rotateX(-360deg) rotateY(360deg);
+    }
+}
+@-moz-keyframes animate-titles {
+    0% {
+        -moz-transform: rotateX(0deg) rotateY(0deg);
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        -moz-transform: rotateX(-360deg) rotateY(180deg);
+        transform: rotateX(-360deg) rotateY(180deg);
+    }
+    65% {
+        -moz-transform: rotateX(-360deg) rotateY(360deg);
+        transform: rotateX(-360deg) rotateY(360deg);
+    }
+    100% {
+        -moz-transform: rotateX(-360deg) rotateY(360deg);
+        transform: rotateX(-360deg) rotateY(360deg);
+    }
+}
+@keyframes animate-titles {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: rotateX(-360deg) rotateY(180deg);
+    }
+    65% {
+        transform: rotateX(-360deg) rotateY(360deg);
+    }
+    100% {
+        transform: rotateX(-360deg) rotateY(360deg);
+    }
+}
